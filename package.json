@@ -1,0 +1,28 @@
+{
+  "name": "modbus-mitsubishi-fx3u",
+  "version": "1.0.0",
+  "description": "mitsubishi fx3u implementation for com-modbus device.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adrianaryaputra/modbus-mitsubishi-fx3u.git"
+  },
+  "keywords": [
+    "modbus",
+    "mitsubishi",
+    "fx3u",
+    "plc"
+  ],
+  "author": "adrianaryaputra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianaryaputra/modbus-mitsubishi-fx3u/issues"
+  },
+  "homepage": "https://github.com/adrianaryaputra/modbus-mitsubishi-fx3u#readme",
+  "dependencies": {
+    "com-modbus": "git://github.com/adrianaryaputra/com-modbus.git"
+  }
+}
