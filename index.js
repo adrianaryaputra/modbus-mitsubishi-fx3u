@@ -167,7 +167,7 @@ class ModbusDevice_FX3U extends ModbusDevice{
         callback = ()=>{},
     }) {
         this.handler.send({
-            modbusSendCommand: this.command.readCoils,
+            modbusSendCommand: ModbusCommand.readCoils,
             modbusSendArgs: [
                 address, 
                 length*8 // length in byte
@@ -187,7 +187,7 @@ class ModbusDevice_FX3U extends ModbusDevice{
         callback = ()=>{}, 
     }) {
         this.handler.send({
-            modbusSendCommand: this.command.readHoldingRegisters,
+            modbusSendCommand: ModbusCommand.readHoldingRegisters,
             modbusSendArgs: [
                 address, 
                 length
@@ -207,7 +207,7 @@ class ModbusDevice_FX3U extends ModbusDevice{
         callback = ()=>{},
     }) {
         this.handler.send({
-            modbusSendCommand: this.command.writeCoil,
+            modbusSendCommand: ModbusCommand.writeCoil,
             modbusSendArgs: [
                 address, 
                 value
@@ -227,7 +227,7 @@ class ModbusDevice_FX3U extends ModbusDevice{
         callback = ()=>{},
     }) {
         this.handler.send({
-            modbusSendCommand: this.command.writeRegister,
+            modbusSendCommand: ModbusCommand.writeRegister,
             modbusSendArgs: [
                 address, 
                 value
